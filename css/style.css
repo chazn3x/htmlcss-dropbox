@@ -338,7 +338,7 @@ main {
     background-color: rgb(240, 240, 240);
 }
 
-/* oprations section */
+/* operations section */
 .operations {
     margin-top: 100px;
 }
@@ -360,6 +360,60 @@ main {
 .operations-card p a {
     text-decoration: underline;
     color: black;
+}
+
+/* clients section */
+.clients {
+    margin-top: 80px;
+}
+.clients-top h2 {
+    display: block;
+    width: 55%;
+}
+.clients-top a {
+    display: block;
+    margin: 25px 0 40px;
+    color: rgb(1,97,255);
+    text-decoration: underline;
+    font-size: 14px;
+}
+.clients-middle {
+    background-color: rgb(240,240,240);
+}
+.clients-middle .square-big {
+    float: left;
+    width: 30vw;
+    height: 30vw;
+}
+.clients-middle .square-small {
+    float: left;
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+}
+.square-small img {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clients-middle .clients-content {
+    float: left;
+    width: 40vw;
+}
+#designit {
+    background-color: rgb(162,211,155);
+    border: 10px solid rgb(208,233,205);
+}
+#asu {
+    background-color: rgb(98,9,43);
+}
+#florida {
+    background-color: rgb(0,147,206);
+}
+#topps {
+    background-color: rgb(255,29,28);
 }
 
 
