@@ -48,6 +48,11 @@ h4 {
 .show-menu:hover~.layover {
     display: block;
 }
+hr {
+    margin: 30px 0;
+    border: 0.5px solid lightgray;
+    width: 50px;
+}
 
 
 /* header */
@@ -267,11 +272,6 @@ main {
     color: rgb(1,97,255);
     text-decoration: underline;
 }
-.col-content hr {
-    margin: 30px 0;
-    border: 0.5px solid lightgray;
-    width: 50px;
-}
 .col-bottom span {
     display: inline-block;
     margin-bottom: 10px;
@@ -393,7 +393,7 @@ main {
 }
 .square-small img {
     position: absolute;
-    width: 60%;
+    width: 9vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -401,6 +401,15 @@ main {
 .clients-middle .clients-content {
     float: left;
     width: 40vw;
+    padding: 45px;
+    font-size: 14px;
+
+}
+.clients-content img {
+    width: 9vw;
+}
+.clients-content p {
+    margin-bottom: 40px;
 }
 #designit {
     background-color: rgb(162,211,155);
