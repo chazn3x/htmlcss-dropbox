@@ -436,6 +436,27 @@ main {
 #clear-channel {
     background-color: rgb(255,216,48);
 }
+.clients-calltoaction {
+    background-color: rgb(180,208,231);
+    padding: 110px 0;
+}
+.clients-calltoaction h2 {
+    display: block;
+    float: left;
+    width: 50%;
+    color: rgb(98,9,43);
+}
+.clients-calltoaction a {
+    float: right;
+    padding: 7px 45px;
+    background-color: #fff;
+    color: black;
+    font-size: 14px;
+}
+.clients-calltoaction a:hover {
+    background-color: rgb(240,240,240);
+}
+
 
 
 /* +++ debug +++ */
