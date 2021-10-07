@@ -87,7 +87,7 @@ header {
 .header-menu li:hover span {
     padding-top: 20px;
     padding-bottom: 21.5px;
-    border-bottom: 3px solid skyblue;
+    border-bottom: 3px solid rgb(1,97,255);
     cursor: pointer;
 }
 .header-menu .hidden-menu {
@@ -228,16 +228,16 @@ main {
 .center-col {
     margin: 0 50px;
 }
-.utente {
+.options .utente {
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
-.col-content {
+.col-content, .row-content {
     padding: 25px;
     font-size: 12px;
 }
-.col-content .bold {
+.options .bold {
     font-weight: bold;
     font-size: 15px;
     padding: 12px 0;
@@ -286,6 +286,24 @@ main {
 }
 .options-row {
     border: 1px solid lightgray;
+}
+.row-left p {
+    margin-top: 20px;
+}
+.row-left {
+    float: left;
+    width: 70%;
+}
+.row-right {
+    margin-top: 10px;
+    width: 30%;
+    float: right;
+}
+.row-right .blue-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
 }
 
 
