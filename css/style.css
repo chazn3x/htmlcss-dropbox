@@ -77,19 +77,22 @@ header {
 .hidden-menu .hidden-list {
     width: 15vw;
     float: left;
-    line-height: 35px;
+    line-height: 17px;
 }
-.hidden-list h6, .hidden-list li {
+.hidden-list h6, .hidden-list a {
     font-size: 13px;
-    padding-left: 10px;
+    padding: 12px 10px;
     display: block;
 }
-.hidden-list li a {
+.hidden-list li {
+    list-style: none;
+}
+.hidden-list a {
     display: block;
     color: black;
 }
 .hidden-list li:hover {
-    background-color: lightgrey;
+    background-color: rgb(240,240,240);
 }
 
 
@@ -106,9 +109,9 @@ main {
 /* +++ debug +++ */
 
 
-.debug header {
-    /* background-color: grey; */
-}
+/* .debug header {
+    background-color: grey;
+} */
 /* .debug .header-left {
     background-color: skyblue;
     height: 100%;
@@ -117,14 +120,14 @@ main {
     background-color: lightyellow;
     height: 100%;
 } */
-.debug .header-menu .hidden-menu {
+/* .debug .header-menu .hidden-menu {
     height: 300px;
-    /* width: 500px; */
-}
-.debug .hidden-menu .hidden-list {
+    width: 500px;
+} */
+/* .debug .hidden-menu .hidden-list {
     height: 100%;
-    /* background-color: lightgrey; */
-}
+    background-color: lightgrey;
+} */
 
 /* layover */
 /* .layover {
