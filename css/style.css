@@ -216,34 +216,38 @@ main {
 .options {
     margin-top: 30px;
 }
+.options-top {
+    display: flex;
+}
 .options-col {
     width: calc((100% - 100px) / 3);
     float: left;
     border: 1px solid lightgray;
+    padding-bottom: 80px;
 }
 .center-col {
     margin: 0 50px;
 }
-.options-col .utente {
+.utente {
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
 .col-content {
     padding: 25px;
+    font-size: 12px;
 }
-.col-content .price {
+.col-content .bold {
     font-weight: bold;
+    font-size: 15px;
     padding: 12px 0;
 }
 .col-content .ricorrenza {
     color: grey;
-    font-size: 12px;
     margin-bottom: 50px;
 }
-.col-icons-options li {
+.options-col li {
     list-style: none;
-    font-size: 12px;
     padding-bottom: 20px;
 }
 .col-icons-options div {
@@ -253,7 +257,36 @@ main {
 .col-icons-options div:nth-child(2) {
     width: calc(100% - 30px);
 }
-
+.col-calltoaction .blue-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 13px;
+}
+.col-calltoaction #col-buy {
+    color: rgb(1,97,255);
+    text-decoration: underline;
+}
+.col-content hr {
+    margin: 30px 0;
+    border: 0.5px solid lightgray;
+    width: 50px;
+}
+.col-bottom span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.col-bottom i {
+    color: rgb(1,97,255);
+    font-size: 16px;
+}
+.options-bottom {
+    margin-top: 50px;
+}
+.options-row {
+    border: 1px solid lightgray;
+}
 
 
 
@@ -287,6 +320,6 @@ main {
     height: 600px;
 } */
 
-.debug .options .options-col {
+/* .debug .options .options-col {
     height: 500px;
-}
+} */
