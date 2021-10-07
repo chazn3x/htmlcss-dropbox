@@ -11,15 +11,23 @@
     clear: both;
 }
 .container-big {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 .container-small {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 a {
     text-decoration: none;
+}
+.blue-btn {
+    background-color: rgb(1,97,255);
+    padding: 10px 15px;
+    color: white;
+}
+.blue-btn:hover {
+    background-color: cornflowerblue;
 }
 
 
@@ -49,11 +57,11 @@ header {
     vertical-align: middle;
     cursor: pointer;
 }
-.header-left .header-menu {
+.header-menu {
     line-height: 70px;
     float: left;
 }
-.header-left .header-menu>ul>li {
+.header-menu>ul>li {
     display: inline-block;
     padding: 0 15px;
 }
@@ -94,8 +102,24 @@ header {
 .hidden-list li:hover {
     background-color: rgb(240,240,240);
 }
-
-
+.header-right {
+    float: right;
+}
+.header-right .show-menu {
+    position: relative;
+}
+.header-right .hidden-menu {
+    position: absolute;
+    right: 15px;
+}
+.header-right .header-btn {
+    display: inline-block;
+    line-height: 70px;
+    padding-left: 15px;
+}
+#accedi i {
+    margin-left: 15px;
+}
 
 
 /* main */
@@ -104,7 +128,45 @@ header {
 main {
     padding-top: 70px;
 }
-
+/* jumbotron */
+.jumbotron {
+    background-color: rgb(180, 208, 231);
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.jumbotron h1 {
+    font-size: 65px;
+}
+.jumbo-content {
+    margin-top: 40px;
+}
+.jumbo-text {
+    float: left;
+    width: 40%;
+    padding-right: 40px;
+}
+.jumbo-btn {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+#jumbo-annulla {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.jumbo-text i {
+    font-size: 40px;
+    cursor: pointer;
+}
+.jumbo-img {
+    float: left;
+    width: 60%;
+    position: relative;
+}
+.jumbo-img img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 /* +++ debug +++ */
 
@@ -115,10 +177,11 @@ main {
 /* .debug .header-left {
     background-color: skyblue;
     height: 100%;
-}
-.debug .header-right {
+} */
+/* .debug .header-right {
     background-color: lightyellow;
-    height: 100%;
+    height: 70px;
+    width: 50%;
 } */
 /* .debug .header-menu .hidden-menu {
     height: 300px;
@@ -128,6 +191,12 @@ main {
     height: 100%;
     background-color: lightgrey;
 } */
+
+/* .debug .jumbotron {
+    height: 600px;
+} */
+
+
 
 /* layover */
 /* .layover {
