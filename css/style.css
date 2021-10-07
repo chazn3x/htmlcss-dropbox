@@ -29,7 +29,22 @@ a {
 .blue-btn:hover {
     background-color: cornflowerblue;
 }
-
+h2 {
+    font-size: 35px;
+}
+.layover {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+    display: none;
+}
+.show-menu:hover~.layover {
+    display: block;
+}
 
 
 /* header */
@@ -41,6 +56,7 @@ header {
     padding: 0 20px;
     border-bottom: 0.5px solid lightgrey;
     position: fixed;
+    z-index: 1;
 }
 .header-left {
     float: left;
@@ -75,11 +91,12 @@ header {
     background-color: white;
     position: absolute;
     display: none;
-    z-index: 2;
     margin-top: 0.5px;
     padding: 5px;
+    z-index: 1;
 }
 .show-menu:hover .hidden-menu {
+    position: absolute;
     display: block;
 }
 .hidden-menu .hidden-list {
@@ -109,7 +126,6 @@ header {
     position: relative;
 }
 .header-right .hidden-menu {
-    position: absolute;
     right: 15px;
 }
 .header-right .header-btn {
@@ -126,13 +142,14 @@ header {
 
 
 main {
-    padding-top: 70px;
+    padding: 70px 0;
 }
 /* jumbotron */
 .jumbotron {
     background-color: rgb(180, 208, 231);
     padding-top: 60px;
     padding-bottom: 40px;
+    z-index: -1;
 }
 .jumbotron h1 {
     font-size: 65px;
@@ -141,6 +158,7 @@ main {
     margin-top: 30px;
 }
 .jumbo-text {
+    position: relative;
     float: left;
     width: 40%;
     padding-right: 40px;
@@ -167,6 +185,29 @@ main {
     top: 0;
     width: 100%;
 }
+
+/* plans section */
+.plans {
+    margin-top: 160px;
+}
+.plans .fatturazione {
+    margin-top: 50px;
+}
+.plans .fatturazione .circle {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+.plans .fatturazione .circle.check {
+    border: 4px solid rgb(1,97,255);
+}
+
+
+
+
+
 
 /* +++ debug +++ */
 
@@ -196,22 +237,3 @@ main {
     height: 600px;
 } */
 
-
-
-/* layover */
-/* .layover {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100vw;
-    height: calc(100vh - 70px);
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1;
-    display: none;
-}
-li:hover .layover {
-    display: block;
-}
-.layover:hover {
-    display: none;
-} */
