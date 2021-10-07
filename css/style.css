@@ -95,7 +95,6 @@ header {
     position: absolute;
     display: none;
     margin-top: 0.5px;
-    padding: 5px;
     z-index: 1;
 }
 .show-menu:hover .hidden-menu {
@@ -306,8 +305,38 @@ main {
     font-size: 13px;
 }
 
-
-
+/* find-partner section */
+.find-partner {
+    margin-top: 150px;
+}
+.partner-img {
+    float: left;
+    width: 55%;
+}
+.partner-img img {
+    width: 100%;
+}
+.partner-text {
+    float: left;
+    width: 45%;
+    padding: 50px 0 0 50px;
+}
+.partner-text p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.partner-btn {
+    display: inline-block;
+    padding: 10px 17px;
+    border: 1px solid black;
+    font-size: 14px;
+    color: black;
+    margin-top: 25px;
+}
+.partner-btn:hover {
+    background-color: rgb(240, 240, 240);
+}
 
 
 /* +++ debug +++ */
@@ -340,4 +369,8 @@ main {
 
 /* .debug .options .options-col {
     height: 500px;
+} */
+/* .debug .find-partner {
+    background-color: lightgrey;
+    height: 800px;
 } */
