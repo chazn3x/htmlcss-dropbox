@@ -1,0 +1,40 @@
+/* commons */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.container-big {
+    width: 90%;
+    margin: 0 auto;
+}
+.container-small {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+
+header {
+    height: 70px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* +++ debug +++ */
+ .debug header {
+     background-color: grey;
+ }
