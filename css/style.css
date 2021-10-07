@@ -149,7 +149,7 @@ header {
 
 
 main {
-    padding: 70px 0 100px;
+    padding: 70px 0 80px;
 }
 /* jumbotron */
 .jumbotron {
@@ -480,6 +480,47 @@ main {
 }
 
 
+/* footer */
+footer {
+    background: #000;
+    padding: 80px 0 40px 0;
+}
+.footer-link-list {
+    width: 20%;
+    float: left;
+    color: white;
+    padding-bottom: 50px;
+}
+.footer-link-list h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-link-list li {
+    list-style: none;
+    font-size: 13px;
+    line-height: 25px;
+}
+.footer-link-list a {
+    color: white;
+}
+.footer-link-list a:hover {
+    text-decoration: underline;
+}
+footer hr {
+    width: 100px;
+}
+.lingua {
+    color: grey;
+    font-size: 11px;
+}
+.lingua i:first-of-type {
+    font-size: 15px;
+}
+.lingua * {
+    cursor: pointer;
+}
+
+
 /* +++ debug +++ */
 
 
@@ -523,4 +564,11 @@ main {
 /* .debug .operations-card {
     height: 300px;
     background-color: lightyellow;
+} */
+/* .debug footer {
+    height: 400px;
+} */
+/* .debug .footer-link-list {
+    height: 200px;
+    background-color: lightgrey;
 } */
