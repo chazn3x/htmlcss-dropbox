@@ -275,6 +275,9 @@ main {
     color: rgb(1,97,255);
     text-decoration: underline;
 }
+.col-calltoaction #col-buy:hover {
+    text-decoration: none;
+}
 .col-bottom span {
     display: inline-block;
     margin-bottom: 10px;
@@ -548,6 +551,9 @@ footer>div>i {
     cursor: pointer;
     margin: 6px;
 }
+footer>div>i:hover {
+    color: lightgrey;
+}
 footer hr {
     border: 0.5px solid white;
     width: 100px;
@@ -555,12 +561,52 @@ footer hr {
 .lingua {
     color: grey;
     font-size: 11px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
 }
 .lingua i:first-of-type {
     font-size: 15px;
 }
-.lingua * {
-    cursor: pointer;
+.lingua i:last-of-type {
+    vertical-align: text-bottom;
+}
+.lingua:hover {
+    color: lightgray;
+}
+.lingua:hover .lingua-hidden {
+    display: block;
+}
+.lingua-hidden {
+    background-color: rgba(255,255,255,0.9);
+    position: absolute;
+    bottom: 0;
+    left: -17px;
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+.lingua-hidden li {
+    list-style: none;
+}
+.lingua-hidden li:hover a {
+    background-color: rgba(240,240,240,0.8);
+}
+.lingua-hidden a {
+    display: block;
+    color: black;
+    padding: 15px;
+    font-size: 13px;
+    border-bottom: 0.5px solid lightgray;
+    overflow: hidden;
+}
+.lingua-hidden li:last-child a {
+    border-bottom: none;
+}
+.lingua-hidden img {
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
 
