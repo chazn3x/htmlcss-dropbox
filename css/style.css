@@ -609,14 +609,21 @@ footer hr {
     margin-right: 20px;
 }
 
-.up {
-    background-color: rgba(0,0,0,0.3);
+/* opzioni bottom-right */
+.bottom-options {
     display: inline-block;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 25px;
+    right: 25px;
+    opacity: 0.3;
 }
-.up .fa-angle-up {
+.bottom-options:hover {
+    opacity: 1;
+}
+.bottom-options .fa-angle-up {
+    background-color: rgb(0,0,0);
+}
+.bottom-options i {
     display: block;
     width: 50px;
     height: 50px;
@@ -625,7 +632,101 @@ footer hr {
     font-size: 25px;
     margin:0;
     color: white;
+    float: left;
+    cursor: pointer;
 }
+.bottom-options .chat {
+    background-color: rgb(1,97,255);
+    float: left;
+    position: relative;
+}
+.hidden-chat {
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: none;
+}
+.chat:hover .hidden-chat {
+    display: block;
+    z-index: 0;
+}
+.chat-header {
+    height: 50px;
+    background-color: rgb(1,97,255);
+    width: 100%;
+    line-height: 50px;
+    padding-left: 10px;
+}
+.chat-header .help {
+    display: inline-block;
+    color: white;
+}
+.chat-header .help-icon {
+    float: right;
+}
+.chat-body {
+    padding: 5px 0;
+    cursor: default;
+}
+.chat-body .chat-avatar {
+    float: left;
+    /* width: 20%; */
+    padding: 10px;
+}
+.chat-body .chat-avatar i {
+    color: black;
+    cursor: default;
+    border-radius: 50%;
+    background-color: rgb(240,240,240);
+}
+.chat-body .chat-text {
+    float: left;
+    padding: 10px;
+    width: 230px;
+    color: rgb(60, 60, 60);
+}
+.cs-row .chat-avatar i{
+    color:rgb(1,97,255)
+}
+.cs-row:last-of-type .chat-text {
+    margin-top:20px;
+    color: lightgray;
+}
+.client-row .chat-text {
+    text-align: right;
+}
+.hidden-chat .fa-paper-plane {
+    background-color: rgb(1,97,255);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.hidden-chat textarea {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 250px;
+    font-size: 13px;
+    border: none;
+    border-top: 0.5px solid lightgray;
+    resize: none;
+    padding-left: 15px;
+    line-height: 50px;
+}
+.hidden-chat textarea:focus {
+    outline: 0;
+    line-height: 20px;
+    padding: 6px;
+}
+/* .chat:hover {
+    background-color: #fff;
+    width: 300px;
+    border: 1px solid lightgray;
+} */
 
 /* +++ debug +++ */
 
