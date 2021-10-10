@@ -40,7 +40,7 @@ h4 {
     top: 70px;
     left: 0;
     width: 100vw;
-    height: calc(100vh);
+    height: 100vh;
     background-color: rgba(0,0,0,0.4);
     z-index: 0;
     display: none;
@@ -271,14 +271,14 @@ main {
     margin: 20px 0;
     font-size: 13px;
 }
-.col-calltoaction #col-buy {
+.col-calltoaction .col-buy {
     color: rgb(1,97,255);
     text-decoration: underline;
 }
-.col-calltoaction #col-buy:hover {
+.col-calltoaction .col-buy:hover {
     text-decoration: none;
 }
-.col-bottom span {
+.col-bottom h6 {
     display: inline-block;
     margin-bottom: 10px;
 }
