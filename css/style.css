@@ -388,9 +388,9 @@ main {
     height: 30vw;
 }
 .clients-middle .square-big {
-    float: left;
     width: 30vw;
     height: 30vw;
+    float: left;
 }
 .clients-middle .square-small {
     float: left;
@@ -407,8 +407,8 @@ main {
 }
 .clients-middle .clients-content {
     float: left;
-    width: 40vw;
     padding: 45px;
+    width: calc(100% - 60vw);
     font-size: 14px;
     height: 30vw;
     overflow: auto;
