@@ -35,7 +35,12 @@ h2 {
 h4 {
     font-size: 20px;
 }
-.layover {
+.header-menu>ul>li.layover {
+    display: none;
+    padding: 0;
+}
+.show-menu:hover~.layover {
+    display: block;
     position: fixed;
     top: 70px;
     left: 0;
@@ -43,10 +48,6 @@ h4 {
     height: 100vh;
     background-color: rgba(0,0,0,0.4);
     z-index: 0;
-    display: none;
-}
-.show-menu:hover~.layover {
-    display: block;
 }
 hr {
     margin: 30px 0;
